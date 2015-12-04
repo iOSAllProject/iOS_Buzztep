@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6245" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment defaultVersion="1808" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="OpenSans-Regular.ttf">
+            <string>OpenSans</string>
+        </mutableArray>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="55" id="KGk-i7-Jjw" customClass="ConnectionsCustomCell">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="65"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="iSu-e9-Dbe">
+                        <rect key="frame" x="8" y="4" width="56" height="56"/>
+                    </imageView>
+                    <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mM9-7q-Zyi">
+                        <rect key="frame" x="290" y="15" width="20" height="24"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="20" id="by0-lz-PDg"/>
+                            <constraint firstAttribute="height" constant="24" id="dLe-h3-e7m"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fg3-bG-FoE">
+                        <rect key="frame" x="71" y="21" width="232" height="24"/>
+                        <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="17"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="1Rh-my-rhO">
+                        <rect key="frame" x="356" y="19" width="13" height="23"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="13" id="6Wp-3z-RBQ"/>
+                            <constraint firstAttribute="height" constant="23" id="BSu-Su-ioP"/>
+                        </constraints>
+                    </imageView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UkF-jp-1US">
+                        <rect key="frame" x="324" y="19" width="20" height="24"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="20" id="2Hv-hw-8PU"/>
+                            <constraint firstAttribute="height" constant="24" id="XcK-Zh-kFJ"/>
+                        </constraints>
+                        <state key="normal">
+                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                        <connections>
+                            <action selector="doFollow:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="id8-tM-f4P"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="UkF-jp-1US" secondAttribute="bottom" constant="21" id="AmX-ti-SSf"/>
+                    <constraint firstItem="1Rh-my-rhO" firstAttribute="leading" secondItem="UkF-jp-1US" secondAttribute="trailing" constant="12" id="Tej-tD-MaC"/>
+                    <constraint firstAttribute="trailing" secondItem="1Rh-my-rhO" secondAttribute="trailing" constant="6" id="UfQ-FT-H4W"/>
+                    <constraint firstAttribute="bottom" secondItem="1Rh-my-rhO" secondAttribute="bottom" constant="22" id="dSk-5L-KLh"/>
+                    <constraint firstAttribute="bottom" secondItem="mM9-7q-Zyi" secondAttribute="bottom" constant="15" id="gW2-95-L3R"/>
+                    <constraint firstItem="1Rh-my-rhO" firstAttribute="leading" secondItem="mM9-7q-Zyi" secondAttribute="trailing" constant="46" id="h6W-zl-5RK"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="arrowImageView" destination="mM9-7q-Zyi" id="aLn-e7-vwU"/>
+                <outlet property="btn_follow" destination="UkF-jp-1US" id="1kg-lL-HZO"/>
+                <outlet property="flightImageView" destination="1Rh-my-rhO" id="aK8-ce-TPy"/>
+                <outlet property="nameLabel" destination="fg3-bG-FoE" id="RmT-P8-fvH"/>
+                <outlet property="picImageView" destination="iSu-e9-Dbe" id="Wu5-rM-ERY"/>
+            </connections>
+            <point key="canvasLocation" x="271.5" y="337"/>
+        </tableViewCell>
+    </objects>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>

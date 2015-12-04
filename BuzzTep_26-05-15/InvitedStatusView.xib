@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6254" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="OpenSans-Regular.ttf">
+            <string>OpenSans</string>
+        </mutableArray>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="InvitedStatusView"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="InvitedStatusView">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="260"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w5P-HL-nLd" userLabel="Close Button">
+                    <rect key="frame" x="572" y="5" width="10" height="22"/>
+                    <state key="normal" image="close_btn_1.png">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="closeButtonTouch:" destination="iN0-l3-epB" eventType="touchUpInside" id="Akf-6u-oLq"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rTr-cM-kyA" userLabel="Going Button">
+                    <rect key="frame" x="182" y="101" width="47" height="60"/>
+                    <state key="normal" image="going_btn.png">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="goingStatusButtonTouch:" destination="iN0-l3-epB" eventType="touchUpInside" id="Tdw-YH-Yle"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gKI-G2-uSO" userLabel="Maybe Button">
+                    <rect key="frame" x="277" y="100" width="47" height="60"/>
+                    <state key="normal" image="maybe_btn.png">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="maybeStatusButtonTouch:" destination="iN0-l3-epB" eventType="touchUpInside" id="28m-Dx-wGE"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hpy-nD-kVB" userLabel="Decline Button">
+                    <rect key="frame" x="370" y="101" width="47" height="60"/>
+                    <state key="normal" image="decline_btn.png">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="declineStatusButtonTouch:" destination="iN0-l3-epB" eventType="touchUpInside" id="d2Y-PH-ACO"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What is your meet up status?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ulE-SM-cgg" userLabel="Label">
+                    <rect key="frame" x="221" y="60" width="157" height="14"/>
+                    <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="12"/>
+                    <color key="textColor" red="0.17254901959999999" green="0.18823529410000001" blue="0.1960784314" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="0.70588235290000001" green="0.81176470590000005" blue="0.75294117650000003" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="rTr-cM-kyA" firstAttribute="centerX" secondItem="gKI-G2-uSO" secondAttribute="centerX" constant="-95" id="GT5-6A-5B8"/>
+                <constraint firstAttribute="centerX" secondItem="ulE-SM-cgg" secondAttribute="centerX" constant="0.5" id="HBr-ru-ifP"/>
+                <constraint firstItem="Hpy-nD-kVB" firstAttribute="centerX" secondItem="gKI-G2-uSO" secondAttribute="centerX" constant="93" id="MhP-VY-m7h"/>
+                <constraint firstItem="ulE-SM-cgg" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="60" id="PfI-dS-Bep"/>
+                <constraint firstItem="gKI-G2-uSO" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="100" id="THc-NZ-UBe"/>
+                <constraint firstItem="rTr-cM-kyA" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="101" id="abq-fi-ZNX"/>
+                <constraint firstAttribute="trailing" secondItem="w5P-HL-nLd" secondAttribute="trailing" constant="18" id="cBk-of-g8g"/>
+                <constraint firstAttribute="centerX" secondItem="gKI-G2-uSO" secondAttribute="centerX" constant="-0.5" id="fLY-IU-MUC"/>
+                <constraint firstItem="Hpy-nD-kVB" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="101" id="lWE-oq-TU6"/>
+                <constraint firstItem="w5P-HL-nLd" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="5" id="vtj-LW-tFI"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="198" y="131"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="close_btn_1.png" width="10" height="10"/>
+        <image name="decline_btn.png" width="47" height="60"/>
+        <image name="going_btn.png" width="47" height="60"/>
+        <image name="maybe_btn.png" width="47" height="60"/>
+    </resources>
+</document>

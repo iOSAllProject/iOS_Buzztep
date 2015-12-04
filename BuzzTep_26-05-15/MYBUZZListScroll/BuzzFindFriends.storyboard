@@ -1,0 +1,379 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="OpenSans-Regular.ttf">
+            <string>OpenSans</string>
+            <string>OpenSans</string>
+            <string>OpenSans</string>
+        </mutableArray>
+        <mutableArray key="OpenSans-Semibold.ttf">
+            <string>OpenSans-Semibold</string>
+        </mutableArray>
+    </customFonts>
+    <scenes>
+        <!--FIND FRIENDS-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController storyboardIdentifier="findfriendsvc" id="vXZ-lx-hvc" customClass="FindFriendsVC" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bUm-Jm-R4E" userLabel="Map Key Button">
+                                <rect key="frame" x="0.0" y="60" width="320" height="17"/>
+                                <color key="backgroundColor" red="0.89019607840000003" green="0.89019607840000003" blue="0.89019607840000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="17" id="MLC-MN-kTN"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="OpenSans-Semibold" family="Open Sans" pointSize="8"/>
+                                <state key="normal" title="MAP KEY">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="pressMapKeyButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="FW0-hx-MoK"/>
+                                </connections>
+                            </button>
+                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XmC-JQ-XFP" userLabel="Map Key View">
+                                <rect key="frame" x="0.0" y="60" width="320" height="73"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HeE-a8-9jp" userLabel="Walking Button">
+                                        <rect key="frame" x="13" y="7" width="48" height="48"/>
+                                        <state key="normal" image="Walking.png">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="pressWalkingButtom:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Nqu-fc-P6m"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CZQ-fi-RSy" userLabel="Driving Button">
+                                        <rect key="frame" x="74" y="7" width="48" height="48"/>
+                                        <state key="normal" image="Driving.png">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="pressDrivingButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="AIZ-Xm-IUg"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OJ6-1P-oRP" userLabel="Flying Button">
+                                        <rect key="frame" x="135" y="7" width="48" height="48"/>
+                                        <state key="normal" image="Flying.png">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="pressFlyingButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="ER3-BM-Ufi"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Pn-NP-5We" userLabel="Train Button">
+                                        <rect key="frame" x="198" y="8" width="48" height="48"/>
+                                        <state key="normal" image="Train.png">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="pressTrainButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="JUN-aa-wBM"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lHN-Eh-dbD" userLabel="Ferry Button">
+                                        <rect key="frame" x="260" y="7" width="48" height="48"/>
+                                        <state key="normal" image="frerry.png">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="pressFerryButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="c14-KL-Fd4"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="WALKING" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i51-R0-r5r">
+                                        <rect key="frame" x="13" y="59" width="48" height="10"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="8"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="DRIVING" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X5k-2l-LHZ">
+                                        <rect key="frame" x="74" y="59" width="48" height="10"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="8"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="FLYING" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q10-em-dkA">
+                                        <rect key="frame" x="135" y="59" width="48" height="10"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="8"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="TRAIN" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vrb-Wh-G5g">
+                                        <rect key="frame" x="198" y="59" width="48" height="10"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="8"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="FERRY" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HfF-1V-4Ec">
+                                        <rect key="frame" x="260" y="59" width="48" height="10"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="8"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.8901960784313725" green="0.8901960784313725" blue="0.8901960784313725" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="73" id="Sbg-bS-OR5"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mg2-Kb-Edd">
+                                <rect key="frame" x="136" y="512" width="48" height="48"/>
+                                <state key="normal" image="ellipse6Copy2.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="animationAction:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Euf-E7-ccd"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" verticalHuggingPriority="247" translatesAutoresizingMaskIntoConstraints="NO" id="QvF-ed-YwH">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="60"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s7u-fL-3OL">
+                                        <rect key="frame" x="287" y="27" width="20" height="22"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="22" id="Nxf-wk-zk9"/>
+                                            <constraint firstAttribute="width" constant="20" id="cv2-n0-dys"/>
+                                        </constraints>
+                                        <state key="normal" image="right_navbar_btn.png">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="pressRightBarButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="OWY-zr-bTN"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="FIND FRIENDS" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7qW-AD-pPq">
+                                        <rect key="frame" x="59" y="22" width="203" height="32"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="32" id="cW7-Ig-hJa"/>
+                                            <constraint firstAttribute="width" constant="203" id="vvi-Zq-Xja"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                        <color key="textColor" red="0.43529411759999997" green="0.6705882353" blue="0.65098039220000004" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.14901960780000001" green="0.14901960780000001" blue="0.14901960780000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="ENf-DP-VUv"/>
+                                    <constraint firstAttribute="bottom" secondItem="s7u-fL-3OL" secondAttribute="bottom" constant="11" id="Zgx-ao-TEQ"/>
+                                    <constraint firstAttribute="bottom" secondItem="7qW-AD-pPq" secondAttribute="bottom" constant="6" id="flN-TL-heD"/>
+                                    <constraint firstAttribute="trailing" secondItem="s7u-fL-3OL" secondAttribute="trailing" constant="13" id="g6x-pd-Ia6"/>
+                                    <constraint firstAttribute="centerX" secondItem="7qW-AD-pPq" secondAttribute="centerX" id="xoR-sW-bTv"/>
+                                </constraints>
+                            </view>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="R4V-o1-9F6">
+                                <rect key="frame" x="0.0" y="60" width="320" height="509"/>
+                                <connections>
+                                    <outlet property="delegate" destination="vXZ-lx-hvc" id="oNu-Hi-RZr"/>
+                                </connections>
+                            </mapView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="XmC-JQ-XFP" secondAttribute="trailing" id="4Sq-n6-U2i"/>
+                            <constraint firstAttribute="trailing" secondItem="QvF-ed-YwH" secondAttribute="trailing" id="Bbb-nX-uTV"/>
+                            <constraint firstItem="QvF-ed-YwH" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="C1G-KD-hVe"/>
+                            <constraint firstItem="R4V-o1-9F6" firstAttribute="top" secondItem="QvF-ed-YwH" secondAttribute="bottom" id="L3J-B3-aBj"/>
+                            <constraint firstAttribute="trailing" secondItem="bUm-Jm-R4E" secondAttribute="trailing" id="Mdz-YQ-CVG"/>
+                            <constraint firstItem="R4V-o1-9F6" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="Pia-gR-XlZ"/>
+                            <constraint firstItem="bUm-Jm-R4E" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="XZ5-lp-BsF"/>
+                            <constraint firstItem="XmC-JQ-XFP" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="ZnP-A4-Kc5"/>
+                            <constraint firstAttribute="bottom" secondItem="R4V-o1-9F6" secondAttribute="bottom" constant="-1" id="fca-mE-dii"/>
+                            <constraint firstItem="XmC-JQ-XFP" firstAttribute="top" secondItem="QvF-ed-YwH" secondAttribute="bottom" id="hlE-Rt-Hy9"/>
+                            <constraint firstAttribute="trailing" secondItem="R4V-o1-9F6" secondAttribute="trailing" id="kvz-mo-INE"/>
+                            <constraint firstItem="QvF-ed-YwH" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="top" id="sxm-FE-Aem"/>
+                            <constraint firstItem="bUm-Jm-R4E" firstAttribute="top" secondItem="QvF-ed-YwH" secondAttribute="bottom" id="wAN-V2-DqH"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="FIND FRIENDS" id="Kj5-nU-5QU">
+                        <barButtonItem key="rightBarButtonItem" image="right_navbar_btn" id="5bq-TW-qID" userLabel="Right Bar Button Item">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <connections>
+                                <action selector="pressRightBarButton:" destination="vXZ-lx-hvc" id="P9o-a3-ViX"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="mapKeyButton" destination="bUm-Jm-R4E" id="Xah-dj-In9"/>
+                        <outlet property="mapKeyView" destination="XmC-JQ-XFP" id="VxK-SQ-nyR"/>
+                        <outlet property="mapView" destination="R4V-o1-9F6" id="OIV-kf-0qM"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="557.86666666666667" y="335.12"/>
+        </scene>
+        <!--Find Friends DetailVC-->
+        <scene sceneID="Wtt-ii-tuA">
+            <objects>
+                <viewController storyboardIdentifier="frienddetail" id="oCs-rq-5jC" customClass="FindFriendsDetailVC" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="PhN-g8-8U0"/>
+                        <viewControllerLayoutGuide type="bottom" id="xXi-qh-91B"/>
+                    </layoutGuides>
+                    <view key="view" alpha="0.89999999999999991" contentMode="scaleToFill" id="hfb-s1-1RS">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="arW-Yd-2A2" userLabel="Close">
+                                <rect key="frame" x="292" y="13" width="15" height="22"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="15" id="Af5-NW-vCG"/>
+                                    <constraint firstAttribute="height" constant="22" id="ZSs-PL-UmJ"/>
+                                </constraints>
+                                <state key="normal" image="close_btn.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="pressCloseButton:" destination="oCs-rq-5jC" eventType="touchUpInside" id="4dX-cf-kYJ"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="zOM-bJ-9li" userLabel="User Avatar">
+                                <rect key="frame" x="126" y="124" width="68" height="68"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="68" id="3bz-JO-ZAs"/>
+                                    <constraint firstAttribute="height" constant="68" id="W4r-X3-wiO"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tammy Smith" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D5V-Ce-sb7" userLabel="User Name">
+                                <rect key="frame" x="85" y="202" width="150" height="25"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="25" id="F0Z-ab-rYd"/>
+                                    <constraint firstAttribute="width" constant="150" id="Ln8-C9-LyJ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="19"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Amsterdam, Netherlands" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h1K-SO-oBr" userLabel="User Adress">
+                                <rect key="frame" x="80" y="230" width="160" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="160" id="7eJ-Hf-sG7"/>
+                                    <constraint firstAttribute="height" constant="20" id="y0O-qF-AzB"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="13"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1.5 Miles, 8 Mins" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c2y-cb-kcJ" userLabel="User Distance">
+                                <rect key="frame" x="85" y="247" width="150" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="lGl-Vo-WQ0"/>
+                                    <constraint firstAttribute="width" constant="150" id="oAm-4F-vHd"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="13"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dot.png" translatesAutoresizingMaskIntoConstraints="NO" id="O40-M4-VL3" userLabel="Dot">
+                                <rect key="frame" x="55" y="235" width="12" height="19"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zWB-qt-wWn" userLabel="Passport">
+                                <rect key="frame" x="63" y="292" width="80" height="80"/>
+                                <state key="normal" image="passport_btn.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="pressPassportButton:" destination="oCs-rq-5jC" eventType="touchUpInside" id="WHV-VK-PR2"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="38F-dB-gLm" userLabel="Meet Up">
+                                <rect key="frame" x="177" y="292" width="80" height="80"/>
+                                <state key="normal" image="meetup_btn.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="pressMeetUpButton:" destination="oCs-rq-5jC" eventType="touchUpInside" id="YAW-dm-D9h"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U63-VL-7ig" userLabel="Call">
+                                <rect key="frame" x="63" y="404" width="80" height="80"/>
+                                <state key="normal" image="call_btn.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="pressCallButton:" destination="oCs-rq-5jC" eventType="touchUpInside" id="Eee-K9-ce5"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hVd-Hy-mOb" userLabel="Message">
+                                <rect key="frame" x="177" y="404" width="80" height="80"/>
+                                <state key="normal" image="message_btn.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="pressMessageButton:" destination="oCs-rq-5jC" eventType="touchUpInside" id="lVh-io-y8j"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.14901960780000001" green="0.14901960780000001" blue="0.14901960780000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="centerY" secondItem="U63-VL-7ig" secondAttribute="centerY" constant="-160" id="6qf-nH-XRB"/>
+                            <constraint firstAttribute="centerX" secondItem="U63-VL-7ig" secondAttribute="centerX" constant="57" id="7EI-I2-Wf4"/>
+                            <constraint firstAttribute="centerY" secondItem="O40-M4-VL3" secondAttribute="centerY" constant="39.5" id="9UU-Pu-m4Z"/>
+                            <constraint firstAttribute="centerX" secondItem="zWB-qt-wWn" secondAttribute="centerX" constant="57" id="Cwx-Nu-bOH"/>
+                            <constraint firstAttribute="centerX" secondItem="h1K-SO-oBr" secondAttribute="centerX" id="D7p-gX-Rsc"/>
+                            <constraint firstAttribute="centerY" secondItem="zWB-qt-wWn" secondAttribute="centerY" constant="-48" id="Hzu-s3-WMX"/>
+                            <constraint firstAttribute="centerX" secondItem="O40-M4-VL3" secondAttribute="centerX" constant="99.5" id="IKB-6D-gIc"/>
+                            <constraint firstAttribute="centerX" secondItem="D5V-Ce-sb7" secondAttribute="centerX" id="PFS-Tc-CDB"/>
+                            <constraint firstItem="arW-Yd-2A2" firstAttribute="top" secondItem="PhN-g8-8U0" secondAttribute="bottom" constant="13" id="TLh-mu-MU2"/>
+                            <constraint firstAttribute="centerX" secondItem="38F-dB-gLm" secondAttribute="centerX" constant="-57" id="UOf-rq-mJp"/>
+                            <constraint firstItem="zWB-qt-wWn" firstAttribute="leading" secondItem="hfb-s1-1RS" secondAttribute="leadingMargin" constant="47" id="VRE-vx-DPq"/>
+                            <constraint firstAttribute="centerY" secondItem="D5V-Ce-sb7" secondAttribute="centerY" constant="69.5" id="ayQ-bo-6BV"/>
+                            <constraint firstAttribute="trailing" secondItem="arW-Yd-2A2" secondAttribute="trailing" constant="13" id="bRD-f8-cpB"/>
+                            <constraint firstAttribute="centerX" secondItem="c2y-cb-kcJ" secondAttribute="centerX" id="cV0-gL-sh0"/>
+                            <constraint firstAttribute="centerY" secondItem="c2y-cb-kcJ" secondAttribute="centerY" constant="27" id="f6n-WQ-BE3"/>
+                            <constraint firstAttribute="centerX" secondItem="hVd-Hy-mOb" secondAttribute="centerX" constant="-57" id="gWT-2v-TGX"/>
+                            <constraint firstAttribute="centerY" secondItem="hVd-Hy-mOb" secondAttribute="centerY" constant="-160" id="kG5-uF-jeh"/>
+                            <constraint firstAttribute="centerY" secondItem="38F-dB-gLm" secondAttribute="centerY" constant="-48" id="muJ-id-VJL"/>
+                            <constraint firstAttribute="centerX" secondItem="zOM-bJ-9li" secondAttribute="centerX" id="rgs-Jk-vup"/>
+                            <constraint firstAttribute="centerY" secondItem="h1K-SO-oBr" secondAttribute="centerY" constant="44" id="tg0-cr-vgJ"/>
+                            <constraint firstAttribute="centerY" secondItem="zOM-bJ-9li" secondAttribute="centerY" constant="126" id="wMb-5j-ijM"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="Ooc-H4-jxN"/>
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <connections>
+                        <outlet property="userAdress" destination="h1K-SO-oBr" id="iWr-yV-pmJ"/>
+                        <outlet property="userAvatar" destination="zOM-bJ-9li" id="lbd-V0-Qmc"/>
+                        <outlet property="userDistance" destination="c2y-cb-kcJ" id="Sz0-lL-FbW"/>
+                        <outlet property="userName" destination="D5V-Ce-sb7" id="vg6-AS-yRF"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="X5K-2x-n6N" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="953" y="335"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Driving.png" width="96" height="96"/>
+        <image name="Flying.png" width="96" height="95"/>
+        <image name="Train.png" width="96" height="96"/>
+        <image name="Walking.png" width="96" height="95"/>
+        <image name="call_btn.png" width="80" height="80"/>
+        <image name="close_btn.png" width="15" height="15"/>
+        <image name="dot.png" width="12" height="19"/>
+        <image name="ellipse6Copy2.png" width="48" height="48"/>
+        <image name="frerry.png" width="96" height="95"/>
+        <image name="meetup_btn.png" width="80" height="80"/>
+        <image name="message_btn.png" width="80" height="80"/>
+        <image name="passport_btn.png" width="80" height="80"/>
+        <image name="right_navbar_btn" width="20" height="19"/>
+        <image name="right_navbar_btn.png" width="20" height="19"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>

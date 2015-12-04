@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="OpenStatusAdminView"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="OpenStatusAdminView">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="260"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mgf-DS-2GJ" userLabel="Get Direction Button">
+                    <rect key="frame" x="171" y="60" width="68" height="59"/>
+                    <state key="normal" image="get_directions_btn.png">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="getDirectionButtonTouch:" destination="iN0-l3-epB" eventType="touchUpInside" id="Gwk-MY-j4c"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TQx-uU-l5C" userLabel="Add To Call Button">
+                    <rect key="frame" x="180" y="140" width="51" height="60"/>
+                    <state key="normal" image="add_to_cal_btn.png">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="addToCalButtonTouch:" destination="iN0-l3-epB" eventType="touchUpInside" id="8nK-Gh-t4n"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nkD-bx-4K0" userLabel="Set Reminder Button">
+                    <rect key="frame" x="270" y="140" width="60" height="60"/>
+                    <state key="normal" image="set_reminder_btn.png">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="setReminderButtonTouch:" destination="iN0-l3-epB" eventType="touchUpInside" id="Cgt-qm-nSg"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Oyi-Lm-ThN" userLabel="Cancel Meet Up Button">
+                    <rect key="frame" x="362" y="140" width="70" height="60"/>
+                    <state key="normal" image="cancel_meetup_btn.png">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="cancelMeetUpButtonTouch:" destination="iN0-l3-epB" eventType="touchUpInside" id="23j-xR-bQk"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qDh-jp-TrQ" userLabel="Edit Event Button">
+                    <rect key="frame" x="373" y="60" width="48" height="60"/>
+                    <state key="normal" image="edit_event_btn.png">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="editEventButtonTouch:" destination="iN0-l3-epB" eventType="touchUpInside" id="aJ4-cb-AI5"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wZq-aO-ceC" userLabel="Invite Button">
+                    <rect key="frame" x="277" y="60" width="47" height="60"/>
+                    <state key="normal" image="invite_btn_1.png">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="inviteButtonTouch:" destination="iN0-l3-epB" eventType="touchUpInside" id="kkQ-dY-BE6"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jdM-Ip-789" userLabel="Close Button">
+                    <rect key="frame" x="572" y="5" width="10" height="22"/>
+                    <state key="normal" image="close_btn_1.png">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="closeButtonTouch:" destination="iN0-l3-epB" eventType="touchUpInside" id="gIN-Jd-mAU"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="0.70588235290000001" green="0.81176470590000005" blue="0.75294117650000003" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="wZq-aO-ceC" firstAttribute="leading" secondItem="Mgf-DS-2GJ" secondAttribute="leading" constant="106" id="1fr-Sh-m05"/>
+                <constraint firstAttribute="bottom" secondItem="TQx-uU-l5C" secondAttribute="bottom" constant="60" id="20G-XI-LwM"/>
+                <constraint firstItem="TQx-uU-l5C" firstAttribute="centerX" secondItem="nkD-bx-4K0" secondAttribute="centerX" constant="-94.5" id="5OU-a5-G4F"/>
+                <constraint firstItem="qDh-jp-TrQ" firstAttribute="centerX" secondItem="Oyi-Lm-ThN" secondAttribute="centerX" id="CVr-v2-LSb"/>
+                <constraint firstItem="wZq-aO-ceC" firstAttribute="trailing" secondItem="qDh-jp-TrQ" secondAttribute="trailing" constant="-97" id="Vor-LU-9cj"/>
+                <constraint firstItem="jdM-Ip-789" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="5" id="asC-Ta-DuR"/>
+                <constraint firstAttribute="trailing" secondItem="jdM-Ip-789" secondAttribute="trailing" constant="18" id="dAi-hg-Ml2"/>
+                <constraint firstItem="qDh-jp-TrQ" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="60" id="dTW-An-kly"/>
+                <constraint firstItem="Mgf-DS-2GJ" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="60" id="dji-OG-jG4"/>
+                <constraint firstAttribute="bottom" secondItem="nkD-bx-4K0" secondAttribute="bottom" constant="60" id="eox-Qy-9Gh"/>
+                <constraint firstAttribute="centerX" secondItem="nkD-bx-4K0" secondAttribute="centerX" id="i9Q-x0-ZFb"/>
+                <constraint firstItem="wZq-aO-ceC" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="60" id="jpx-WK-oZ8"/>
+                <constraint firstItem="Oyi-Lm-ThN" firstAttribute="centerX" secondItem="nkD-bx-4K0" secondAttribute="centerX" constant="97" id="tmg-cb-FQS"/>
+                <constraint firstAttribute="bottom" secondItem="Oyi-Lm-ThN" secondAttribute="bottom" constant="60" id="zl0-07-P9N"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="344" y="358"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="add_to_cal_btn.png" width="51" height="60"/>
+        <image name="cancel_meetup_btn.png" width="70" height="60"/>
+        <image name="close_btn_1.png" width="10" height="10"/>
+        <image name="edit_event_btn.png" width="48" height="60"/>
+        <image name="get_directions_btn.png" width="68" height="59"/>
+        <image name="invite_btn_1.png" width="47" height="60"/>
+        <image name="set_reminder_btn.png" width="60" height="60"/>
+    </resources>
+</document>

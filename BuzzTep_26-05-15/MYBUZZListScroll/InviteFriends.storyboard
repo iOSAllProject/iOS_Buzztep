@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="OpenSans-Regular.ttf">
+            <string>OpenSans</string>
+            <string>OpenSans</string>
+        </mutableArray>
+        <mutableArray key="OpenSans-Semibold.ttf">
+            <string>OpenSans-Semibold</string>
+        </mutableArray>
+    </customFonts>
+    <scenes>
+        <!--INVITE FRIENDS-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController storyboardIdentifier="invitefriendsvc" id="vXZ-lx-hvc" customClass="InviteFriendsVC" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9uy-9n-xsw">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="65"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8ZY-Pe-oHA">
+                                        <rect key="frame" x="20" y="29" width="34" height="22"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="22" id="Ax2-d7-Ijv"/>
+                                            <constraint firstAttribute="width" constant="34" id="n7n-Nm-kce"/>
+                                        </constraints>
+                                        <state key="normal" image="left_navbar_btn.png">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="pressLeftBarButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="5Of-lo-S7W"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="INVITE FRIENDS" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Unp-9C-gs5">
+                                        <rect key="frame" x="95" y="29" width="131" height="21"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="131" id="5K4-o7-cmf"/>
+                                            <constraint firstAttribute="height" constant="21" id="fBa-Fa-gaq"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="OpenSans-Semibold" family="Open Sans" pointSize="15"/>
+                                        <color key="textColor" red="0.43529411759999997" green="0.6705882353" blue="0.65098039220000004" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T9j-Vs-Iut">
+                                        <rect key="frame" x="287" y="27" width="20" height="22"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="20" id="Ayc-r2-xbP"/>
+                                            <constraint firstAttribute="height" constant="22" id="dFl-4Q-95n"/>
+                                        </constraints>
+                                        <state key="normal" backgroundImage="right_navbar_btndrop.png">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="pressRightBarButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="0Hi-9T-Uyy"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.14901960780000001" green="0.14901960780000001" blue="0.14901960780000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="8ZY-Pe-oHA" secondAttribute="bottom" constant="14" id="6eW-El-d8H"/>
+                                    <constraint firstAttribute="bottom" secondItem="Unp-9C-gs5" secondAttribute="bottom" constant="15" id="7pU-G6-sPl"/>
+                                    <constraint firstAttribute="bottom" secondItem="T9j-Vs-Iut" secondAttribute="bottom" constant="16" id="Ac0-mH-ipl"/>
+                                    <constraint firstItem="8ZY-Pe-oHA" firstAttribute="leading" secondItem="9uy-9n-xsw" secondAttribute="leading" constant="20" id="RhF-Ha-OHv"/>
+                                    <constraint firstAttribute="centerX" secondItem="Unp-9C-gs5" secondAttribute="centerX" id="VSm-C1-PPY"/>
+                                    <constraint firstAttribute="trailing" secondItem="T9j-Vs-Iut" secondAttribute="trailing" constant="13" id="ZfH-Ag-hnx"/>
+                                    <constraint firstAttribute="height" constant="65" id="hfV-Kb-hPm"/>
+                                </constraints>
+                            </view>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="83Y-dQ-v3g">
+                                <rect key="frame" x="0.0" y="93" width="320" height="475"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="CustomCell" rowHeight="60" id="mlN-oJ-QuW" userLabel="InviteFriendsCell" customClass="InviteFriendsCell">
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="mlN-oJ-QuW" id="BJJ-Cv-X5t">
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="KkX-2H-CTB" userLabel="User Avatar">
+                                                    <rect key="frame" x="8" y="8" width="45" height="44"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="44" id="KTf-oA-kOE"/>
+                                                        <constraint firstAttribute="width" constant="45" id="i0F-4s-4wR"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Amy Adams" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="200" translatesAutoresizingMaskIntoConstraints="NO" id="wNv-wu-Vpa" userLabel="User Name">
+                                                    <rect key="frame" x="61" y="20" width="200" height="20"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="20" id="Bj6-31-c4x"/>
+                                                        <constraint firstAttribute="width" constant="200" id="rHk-fY-921"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="14"/>
+                                                    <color key="textColor" red="0.14901960784313725" green="0.14901960784313725" blue="0.14901960784313725" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="laI-5c-8FB" userLabel="Invite Button">
+                                                    <rect key="frame" x="269" y="21" width="40" height="17"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="40" id="RFP-Yj-itL"/>
+                                                        <constraint firstAttribute="height" constant="17" id="hsG-da-eZw"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="9"/>
+                                                    <state key="normal" image="invite_btn.png">
+                                                        <color key="titleColor" red="0.17254901959999999" green="0.18823529410000001" blue="0.1960784314" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                    </state>
+                                                    <connections>
+                                                        <action selector="pressInviteButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="yVr-1k-Pq0"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="wNv-wu-Vpa" firstAttribute="top" secondItem="BJJ-Cv-X5t" secondAttribute="top" constant="20" id="Ewv-cJ-w91"/>
+                                                <constraint firstAttribute="trailing" secondItem="laI-5c-8FB" secondAttribute="trailing" constant="11" id="Lia-ww-Aeo"/>
+                                                <constraint firstItem="laI-5c-8FB" firstAttribute="top" secondItem="BJJ-Cv-X5t" secondAttribute="top" constant="21" id="Q8M-2s-xNe"/>
+                                                <constraint firstItem="KkX-2H-CTB" firstAttribute="top" secondItem="BJJ-Cv-X5t" secondAttribute="top" constant="8" id="RD7-xv-8dp"/>
+                                                <constraint firstAttribute="bottom" secondItem="wNv-wu-Vpa" secondAttribute="bottom" constant="20" id="ThQ-hj-zbH"/>
+                                                <constraint firstItem="wNv-wu-Vpa" firstAttribute="leading" secondItem="KkX-2H-CTB" secondAttribute="trailing" constant="8" id="TsI-is-Pwd"/>
+                                                <constraint firstItem="KkX-2H-CTB" firstAttribute="leading" secondItem="BJJ-Cv-X5t" secondAttribute="leading" constant="8" id="gso-58-K8q"/>
+                                                <constraint firstAttribute="bottom" secondItem="KkX-2H-CTB" secondAttribute="bottom" constant="8" id="iKK-7A-vdT"/>
+                                                <constraint firstAttribute="bottom" secondItem="laI-5c-8FB" secondAttribute="bottom" constant="22" id="vhu-jF-KBp"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="inviteButton" destination="laI-5c-8FB" id="pvA-Fe-VjK"/>
+                                            <outlet property="userAvatar" destination="KkX-2H-CTB" id="3H1-PQ-7Is"/>
+                                            <outlet property="userName" destination="wNv-wu-Vpa" id="C7o-FD-Xcx"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="vXZ-lx-hvc" id="l1W-0U-LJW"/>
+                                    <outlet property="delegate" destination="vXZ-lx-hvc" id="p0d-0V-UPO"/>
+                                </connections>
+                            </tableView>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="huX-yV-Wqs">
+                                <rect key="frame" x="0.0" y="65" width="320" height="29"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="28" id="MIn-FQ-4Jg"/>
+                                </constraints>
+                                <segments>
+                                    <segment title="FACEBOOK"/>
+                                    <segment title="CONTACTS"/>
+                                </segments>
+                                <connections>
+                                    <action selector="segmentedAction:" destination="vXZ-lx-hvc" eventType="valueChanged" id="eI3-vG-zvz"/>
+                                </connections>
+                            </segmentedControl>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vnu-Mn-nKh" userLabel="Menu Button">
+                                <rect key="frame" x="136" y="475" width="48" height="48"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="48" id="iZ8-ub-EZ0"/>
+                                    <constraint firstAttribute="height" constant="48" id="qKj-4X-3eL"/>
+                                </constraints>
+                                <state key="normal" image="ellipse6Copy2.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="AnimationAction:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="A7g-Kf-sh5"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="83Y-dQ-v3g" secondAttribute="trailing" id="4RC-aX-Izj"/>
+                            <constraint firstItem="9uy-9n-xsw" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="top" id="85d-1e-mMS"/>
+                            <constraint firstItem="83Y-dQ-v3g" firstAttribute="top" secondItem="huX-yV-Wqs" secondAttribute="bottom" id="Ajn-3A-XuS"/>
+                            <constraint firstItem="huX-yV-Wqs" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="DUQ-bC-IpL"/>
+                            <constraint firstItem="huX-yV-Wqs" firstAttribute="top" secondItem="9uy-9n-xsw" secondAttribute="bottom" id="IWn-N7-PL5"/>
+                            <constraint firstAttribute="centerX" secondItem="Vnu-Mn-nKh" secondAttribute="centerX" id="VZ7-BT-vqi"/>
+                            <constraint firstItem="9uy-9n-xsw" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="aXp-Jb-rUD"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="Vnu-Mn-nKh" secondAttribute="bottom" constant="45" id="c2i-CB-Uyb"/>
+                            <constraint firstAttribute="trailing" secondItem="9uy-9n-xsw" secondAttribute="trailing" id="fEj-jg-HqP"/>
+                            <constraint firstAttribute="trailing" secondItem="huX-yV-Wqs" secondAttribute="trailing" id="jXe-Nv-gJA"/>
+                            <constraint firstItem="83Y-dQ-v3g" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="lkq-AI-Hxp"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="83Y-dQ-v3g" secondAttribute="bottom" id="m6P-fx-auY"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="INVITE FRIENDS" id="Rs9-Gd-62J">
+                        <barButtonItem key="leftBarButtonItem" image="left_navbar_btn" id="FqA-BN-d9L" userLabel="Left Bar Button Item">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <connections>
+                                <action selector="pressLeftBarButton:" destination="vXZ-lx-hvc" id="dqM-W4-L2j"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" image="right_navbar_btn" id="ANE-lz-I9G" userLabel="Right Bar Button Item">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <connections>
+                                <action selector="pressRightBarButton:" destination="vXZ-lx-hvc" id="Z5O-8Y-lL4"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="segmentedProperty" destination="huX-yV-Wqs" id="FYW-If-DSr"/>
+                        <outlet property="tableView" destination="83Y-dQ-v3g" id="Jaa-gS-x9f"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="264" y="-132"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="ellipse6Copy2.png" width="48" height="48"/>
+        <image name="invite_btn.png" width="34" height="17"/>
+        <image name="left_navbar_btn" width="20" height="19"/>
+        <image name="left_navbar_btn.png" width="20" height="19"/>
+        <image name="right_navbar_btn" width="13" height="17"/>
+        <image name="right_navbar_btndrop.png" width="27" height="34"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>
